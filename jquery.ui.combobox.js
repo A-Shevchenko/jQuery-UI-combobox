@@ -57,7 +57,7 @@
 				.addClass( "ui-widget ui-widget-content ui-corner-left" )
 				.css({'margin-right': 0});
 			if (select.attr('id').length > 0) {
-				input.attr('id', select.attr('id'));
+				input.attr('id', 'combobox_' + select.attr('id'));
 			}
 			if (select.attr('name').length > 0) {
 				input.attr('name', select.attr('name'));
