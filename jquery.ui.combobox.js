@@ -97,7 +97,8 @@
 					input.focus();
 				});
 			this.button.find('.ui-button-text').css({'line-height' : 0});
-			this.button.css({'height': input.outerHeight()});
+			var inputHeight = input.outerHeight();
+			this.button.css({'height': inputHeight, 'width': Math.floor(inputHeight * 1.3)});
 		},
 
 		destroy: function() {
