@@ -62,6 +62,7 @@
 			if (select.attr('name').length > 0) {
 				input.attr('name', select.attr('name'));
 			}
+			select.disabled = true;
 
 			input.data( "autocomplete" )._renderItem = function( ul, item ) {
 				return $( "<li></li>" )
